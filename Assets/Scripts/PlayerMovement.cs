@@ -23,7 +23,10 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", vertical);
 
-        transform.Rotate(Vector3.up, mouseHorizontal * rotationSpeed * Time.deltaTime);
+        if (!Input.GetMouseButton(1))
+        {
+            transform.Rotate(Vector3.up, mouseHorizontal * rotationSpeed * Time.deltaTime);
+        }
 
         characterController.SimpleMove(transform.forward * vertical * moveSpeed * Time.deltaTime);
     }
