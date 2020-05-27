@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 60
-  moveSpeed: 225
+  moveSpeed: 150
 --- !u!143 &1514834686
 CharacterController:
   m_ObjectHideFlags: 0
@@ -72,11 +72,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3966878917057839934}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 5867bf23eedbbdb49bae6c7aa2762764,
-        type: 3}
-      propertyPath: m_Name
-      value: kaya
-      objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 5867bf23eedbbdb49bae6c7aa2762764,
         type: 3}
       propertyPath: m_Controller
@@ -141,6 +136,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 5867bf23eedbbdb49bae6c7aa2762764,
+        type: 3}
+      propertyPath: m_Name
+      value: kaya
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5867bf23eedbbdb49bae6c7aa2762764, type: 3}
