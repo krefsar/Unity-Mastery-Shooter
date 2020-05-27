@@ -18,12 +18,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+        float mouseHorizontal = Input.GetAxis("Mouse X");
 
         animator.SetFloat("Speed", vertical);
 
-        transform.Rotate(Vector3.up, horizontal * rotationSpeed * Time.deltaTime);
+        transform.Rotate(Vector3.up, mouseHorizontal * rotationSpeed * Time.deltaTime);
 
         characterController.SimpleMove(transform.forward * vertical * moveSpeed * Time.deltaTime);
     }
