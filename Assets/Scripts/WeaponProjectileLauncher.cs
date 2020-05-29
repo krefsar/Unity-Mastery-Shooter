@@ -26,7 +26,7 @@ public class WeaponProjectileLauncher : WeaponComponent
 
     private Vector3 GetDirection()
     {
-        var ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.5f));
+        var ray = Camera.main.ViewportPointToRay(Vector3.one / 2f);
         Vector3 target = ray.GetPoint(300f);
 
         if (Physics.Raycast(ray, out hitInfo, maxDistance, layerMask))
