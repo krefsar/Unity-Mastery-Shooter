@@ -1,29 +1,16 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Weapon))]
 [RequireComponent(typeof(Animator))]
-public class WeaponAnimation : MonoBehaviour
+public class WeaponAnimation : WeaponComponent
 {
-    private Weapon weapon;
     private Animator animator;
-
-    private void Awake()
-    {
-        weapon = GetComponent<Weapon>();
-        animator = GetComponent<Animator>();
-    }
 
     private void Start()
     {
-        weapon.OnFire += HandleWeaponFire;
+        animator = GetComponent<Animator>();
     }
 
-    private void OnDestroy()
-    {
-        weapon.OnFire -= HandleWeaponFire;
-    }
-
-    private void HandleWeaponFire()
+    protected override void WeaponFired()
     {
         animator.SetTrigger("Fire");
     }
