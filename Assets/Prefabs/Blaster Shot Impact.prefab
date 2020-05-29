@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5219194627061380041}
   - component: {fileID: 5219194627046120347}
   - component: {fileID: 5219194627046194509}
+  - component: {fileID: -1989325339928444935}
   m_Layer: 0
   m_Name: Blaster Shot Impact
   m_TagString: Untagged
@@ -4758,3 +4759,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &-1989325339928444935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5219194627061002237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e417897be1dc5ab42aa29f98125e0b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPoolSize: 50

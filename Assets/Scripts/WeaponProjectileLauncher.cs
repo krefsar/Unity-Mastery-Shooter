@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class WeaponProjectileLauncher : WeaponComponent
 {
     [SerializeField]
-    private Rigidbody projectilePrefab;
+    private Projectile projectilePrefab;
     [SerializeField]
-    private float velocity = 40;
+    private float moveSpeed = 40;
     [SerializeField]
     private LayerMask layerMask;
     [SerializeField]
@@ -20,8 +17,8 @@ public class WeaponProjectileLauncher : WeaponComponent
     {
         Vector3 direction = GetDirection();
 
-        var projectile = Instantiate(projectilePrefab, transform.position, Quaternion.Euler(direction));
-        projectile.velocity = direction * velocity;
+        var projectile = projectilePrefab.Get<Projectile>(transform.position, Quaternion.Euler(direction));
+        projectile.GetComponent<Rigidbody>().velocity = direction * moveSpeed;
     }
 
     private Vector3 GetDirection()

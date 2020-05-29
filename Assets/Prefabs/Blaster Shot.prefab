@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3481670358676141159}
   - component: {fileID: 3481670358676141156}
   - component: {fileID: 6161783671577788708}
+  - component: {fileID: -1523039025810543418}
+  - component: {fileID: 4568083771366151856}
   m_Layer: 9
   m_Name: Blaster Shot
   m_TagString: Untagged
@@ -61,8 +63,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904ae2e7bbf66294287143254724bc7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particlePrefab: {fileID: 5219194627061002237, guid: 04d0c4d2b8eb93a41901655467b70663,
+  particlePrefab: {fileID: -1989325339928444935, guid: 04d0c4d2b8eb93a41901655467b70663,
     type: 3}
+--- !u!114 &-1523039025810543418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3481670358676141157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2025e37d14542b44b1025d4fcd019d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPoolSize: 50
+--- !u!135 &4568083771366151856
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3481670358676141157}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.03
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3481670359999129510
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,7 +102,6 @@ GameObject:
   - component: {fileID: 3481670359999129505}
   - component: {fileID: 3481670359999129506}
   - component: {fileID: 3481670359999129507}
-  - component: {fileID: 3481670359999129504}
   m_Layer: 9
   m_Name: Blaster Shot Visual
   m_TagString: Untagged
@@ -90,7 +117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3481670359999129510}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.000000058564, y: 0.0000001107, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.017466415, y: 0.062928, z: 0.017466415}
   m_Children: []
   m_Father: {fileID: 3481670358676141159}
@@ -143,17 +170,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &3481670359999129504
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3481670359999129510}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
