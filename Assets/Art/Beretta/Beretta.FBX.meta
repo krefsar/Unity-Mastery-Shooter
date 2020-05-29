@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 2108b19adc9e95a41b3d2ed3bf14d983
+timeCreated: 1487394981
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: barrel_low
+    100002: //RootNode
+    100004: bottom_low
+    100006: button_low
+    100008: buttonring_low
+    100010: leftbutton_low
+    100012: leftbuttonbase_low
+    100014: leftcyl_low
+    100016: leftpart1_low
+    100018: leftpart1cyl_low
+    100020: leftpart2_low
+    100022: leftpart3_low
+    100024: middlepart_low
+    100026: rightpart1_low
+    100028: rightpart2_low
+    100030: rightpart3_low
+    100032: rightpart4_low
+    100034: screen_low
+    100036: sideleft_low
+    100038: sideright_low
+    100040: slide_low
+    100042: smallbarrel_low
+    100044: trigger_low
+    100046: ushape_low
+    400000: barrel_low
+    400002: //RootNode
+    400004: bottom_low
+    400006: button_low
+    400008: buttonring_low
+    400010: leftbutton_low
+    400012: leftbuttonbase_low
+    400014: leftcyl_low
+    400016: leftpart1_low
+    400018: leftpart1cyl_low
+    400020: leftpart2_low
+    400022: leftpart3_low
+    400024: middlepart_low
+    400026: rightpart1_low
+    400028: rightpart2_low
+    400030: rightpart3_low
+    400032: rightpart4_low
+    400034: screen_low
+    400036: sideleft_low
+    400038: sideright_low
+    400040: slide_low
+    400042: smallbarrel_low
+    400044: trigger_low
+    400046: ushape_low
+    2300000: barrel_low
+    2300002: //RootNode
+    2300004: bottom_low
+    2300006: button_low
+    2300008: buttonring_low
+    2300010: leftbutton_low
+    2300012: leftbuttonbase_low
+    2300014: leftcyl_low
+    2300016: leftpart1_low
+    2300018: leftpart1cyl_low
+    2300020: leftpart2_low
+    2300022: leftpart3_low
+    2300024: middlepart_low
+    2300026: rightpart1_low
+    2300028: rightpart2_low
+    2300030: rightpart3_low
+    2300032: rightpart4_low
+    2300034: screen_low
+    2300036: sideleft_low
+    2300038: sideright_low
+    2300040: slide_low
+    2300042: smallbarrel_low
+    2300044: trigger_low
+    2300046: ushape_low
+    3300000: barrel_low
+    3300002: //RootNode
+    3300004: bottom_low
+    3300006: button_low
+    3300008: buttonring_low
+    3300010: leftbutton_low
+    3300012: leftbuttonbase_low
+    3300014: leftcyl_low
+    3300016: leftpart1_low
+    3300018: leftpart1cyl_low
+    3300020: leftpart2_low
+    3300022: leftpart3_low
+    3300024: middlepart_low
+    3300026: rightpart1_low
+    3300028: rightpart2_low
+    3300030: rightpart3_low
+    3300032: rightpart4_low
+    3300034: screen_low
+    3300036: sideleft_low
+    3300038: sideright_low
+    3300040: slide_low
+    3300042: smallbarrel_low
+    3300044: trigger_low
+    3300046: ushape_low
+    4300000: base_low
+    4300002: button_low
+    4300004: sideleft_low
+    4300006: sideright_low
+    4300008: bottom_low
+    4300010: leftbutton_low
+    4300012: leftbuttonbase_low
+    4300014: trigger_low
+    4300016: leftpart1_low
+    4300018: leftpart1cyl_low
+    4300020: leftcyl_low
+    4300022: leftpart2_low
+    4300024: middlepart_low
+    4300026: rightpart3_low
+    4300028: barrel_low
+    4300030: smallbarrel_low
+    4300032: screen_low
+    4300034: ushape_low
+    4300036: buttonring_low
+    4300038: rightpart1_low
+    4300040: rightpart2_low
+    4300042: slide_low
+    4300044: leftpart3_low
+    4300046: rightpart4_low
+    7400000: Trigger Pull
+    7400002: Fire
+    7400004: Reload
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Trigger Pull
+      takeName: Take 001
+      firstFrame: 7
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: barrel_low
+        weight: 1
+      - path: bottom_low
+        weight: 1
+      - path: button_low
+        weight: 1
+      - path: buttonring_low
+        weight: 1
+      - path: leftbutton_low
+        weight: 1
+      - path: leftbuttonbase_low
+        weight: 1
+      - path: leftcyl_low
+        weight: 1
+      - path: leftpart1_low
+        weight: 1
+      - path: leftpart1cyl_low
+        weight: 1
+      - path: leftpart2_low
+        weight: 1
+      - path: middlepart_low
+        weight: 1
+      - path: rightpart1_low
+        weight: 1
+      - path: rightpart2_low
+        weight: 1
+      - path: rightpart3_low
+        weight: 1
+      - path: screen_low
+        weight: 1
+      - path: sideleft_low
+        weight: 1
+      - path: sideright_low
+        weight: 1
+      - path: slide_low
+        weight: 1
+      - path: slide_low/leftpart3_low
+        weight: 1
+      - path: slide_low/rightpart4_low
+        weight: 1
+      - path: smallbarrel_low
+        weight: 1
+      - path: trigger_low
+        weight: 1
+      - path: ushape_low
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fire
+      takeName: Take 001
+      firstFrame: 19
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: barrel_low
+        weight: 1
+      - path: bottom_low
+        weight: 1
+      - path: button_low
+        weight: 1
+      - path: buttonring_low
+        weight: 1
+      - path: leftbutton_low
+        weight: 1
+      - path: leftbuttonbase_low
+        weight: 1
+      - path: leftcyl_low
+        weight: 1
+      - path: leftpart1_low
+        weight: 1
+      - path: leftpart1cyl_low
+        weight: 1
+      - path: leftpart2_low
+        weight: 1
+      - path: middlepart_low
+        weight: 1
+      - path: rightpart1_low
+        weight: 1
+      - path: rightpart2_low
+        weight: 1
+      - path: rightpart3_low
+        weight: 1
+      - path: screen_low
+        weight: 1
+      - path: sideleft_low
+        weight: 1
+      - path: sideright_low
+        weight: 1
+      - path: slide_low
+        weight: 1
+      - path: slide_low/leftpart3_low
+        weight: 1
+      - path: slide_low/rightpart4_low
+        weight: 1
+      - path: smallbarrel_low
+        weight: 1
+      - path: trigger_low
+        weight: 1
+      - path: ushape_low
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Reload
+      takeName: Take 001
+      firstFrame: 34
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: barrel_low
+        weight: 1
+      - path: bottom_low
+        weight: 1
+      - path: button_low
+        weight: 1
+      - path: buttonring_low
+        weight: 1
+      - path: leftbutton_low
+        weight: 1
+      - path: leftbuttonbase_low
+        weight: 1
+      - path: leftcyl_low
+        weight: 1
+      - path: leftpart1_low
+        weight: 1
+      - path: leftpart1cyl_low
+        weight: 1
+      - path: leftpart2_low
+        weight: 1
+      - path: middlepart_low
+        weight: 1
+      - path: rightpart1_low
+        weight: 1
+      - path: rightpart2_low
+        weight: 1
+      - path: rightpart3_low
+        weight: 1
+      - path: screen_low
+        weight: 1
+      - path: sideleft_low
+        weight: 1
+      - path: sideright_low
+        weight: 1
+      - path: slide_low
+        weight: 1
+      - path: slide_low/leftpart3_low
+        weight: 1
+      - path: slide_low/rightpart4_low
+        weight: 1
+      - path: smallbarrel_low
+        weight: 1
+      - path: trigger_low
+        weight: 1
+      - path: ushape_low
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.25
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
