@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class ProjectileImpact : PooledMonoBehaviour
+﻿public class ProjectileImpact : PooledMonoBehaviour
 {
     private void OnEnable()
     {
