@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    public static event Action<Weapon> OnWeaponChanged = delegate { };
+
     [SerializeField]
     private Weapon[] weapons;
 
@@ -23,5 +26,7 @@ public class Inventory : MonoBehaviour
         {
             weapon.gameObject.SetActive(weapon == weaponToUse);
         }
+
+        OnWeaponChanged(weaponToUse);
     }
 }

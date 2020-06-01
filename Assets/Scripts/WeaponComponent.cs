@@ -7,7 +7,7 @@ public abstract class WeaponComponent : MonoBehaviour
 
     protected abstract void WeaponFired();
 
-    private void Awake()
+    protected virtual void Awake()
     {
         weapon = GetComponent<Weapon>();
         weapon.OnFire += WeaponFired;
