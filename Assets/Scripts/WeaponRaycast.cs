@@ -8,12 +8,16 @@ public class WeaponRaycast : WeaponComponent
     private LayerMask layerMask;
     [SerializeField]
     private PooledMonoBehaviour decalPrefab;
+    [SerializeField]
+    private Transform firePoint;
 
     private RaycastHit hitInfo;
 
     protected override void WeaponFired()
     {
-        Ray ray = Camera.main.ViewportPointToRay(Vector3.one / 2f);
+        Ray ray = weapon.IsInAimMode ?
+            Camera.main.ViewportPointToRay(Vector3.one / 2f) :
+            new Ray(firePoint.position, firePoint.forward);
 
         if (Physics.Raycast(ray, out hitInfo, maxDistance, layerMask))
         {

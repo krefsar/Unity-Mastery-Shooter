@@ -4,7 +4,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public KeyCode WeaponHotkey {  get { return weaponHotKey; } }
-    public bool Aim {  get { return !Input.GetMouseButton(1); } }
+    public bool IsInAimMode {  get { return !Input.GetMouseButton(1); } }
 
     public event Action OnFire = delegate { };
 
@@ -37,7 +37,6 @@ public class Weapon : MonoBehaviour
     private void Fire()
     {
         fireTimer = 0f;
-        Debug.Log("Firing weapon " + gameObject.name);
         OnFire();
     }
 

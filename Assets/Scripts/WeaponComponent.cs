@@ -3,7 +3,7 @@
 [RequireComponent(typeof(Weapon))]
 public abstract class WeaponComponent : MonoBehaviour
 {
-    private Weapon weapon;
+    protected Weapon weapon;
 
     protected abstract void WeaponFired();
 
