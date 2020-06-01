@@ -1038,7 +1038,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999834506}
-  m_LocalRotation: {x: 0.25290754, y: -0.000000018611923, z: 0.0000000048652633, w: 0.9674905}
+  m_LocalRotation: {x: 0.25290754, y: 0.000000018611921, z: -0.0000000048652624, w: 0.9674905}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1670,7 +1670,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569874466}
-  m_LocalRotation: {x: 0.22448042, y: -5.2384e-15, z: 1.0123388e-14, w: 0.9744786}
+  m_LocalRotation: {x: 0.22448039, y: 0.000000029041724, z: -0.0000000066900276, w: 0.9744786}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1875,7 +1875,8 @@ AudioSource:
   m_GameObject: {fileID: 1818499975}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3063713097791099447, guid: 99d73725624e0e74ebf93c6537582f09,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 93b7dd16af071064b8715eae4b1c9bd7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1981,6 +1982,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   muzzleFlash: {fileID: 875714484}
+--- !u!114 &1818499984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818499975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3fd863fcd68b14bbc59dc29188f5b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 100
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  decalPrefab: {fileID: -2680356981473730782, guid: 94e6fb4bef690124eb88121a9f19894f,
+    type: 3}
 --- !u!1 &1911646161
 GameObject:
   m_ObjectHideFlags: 3
