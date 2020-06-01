@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class WeaponAmmo : WeaponComponent
@@ -9,6 +10,8 @@ public class WeaponAmmo : WeaponComponent
     private int maxAmmo = 24;
     [SerializeField]
     private int maxAmmoPerClip = 6;
+    [SerializeField]
+    private float reloadTime = 0.2f;
 
     private int ammoInClip;
     private int ammoRemainingNotInClip;
@@ -19,6 +22,14 @@ public class WeaponAmmo : WeaponComponent
         ammoRemainingNotInClip = maxAmmo - ammoInClip;
 
         base.Awake();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine(Reload());
+        }
     }
 
     public bool IsAmmoReady()
@@ -35,6 +46,22 @@ public class WeaponAmmo : WeaponComponent
     {
         ammoInClip--;
         OnAmmoChanged();
+    }
+
+    private IEnumerator Reload()
+    {
+        int ammoMissingFromClip = maxAmmoPerClip - ammoInClip;
+        int ammoToMove = Mathf.Min(ammoMissingFromClip, ammoRemainingNotInClip);
+
+        while (ammoToMove > 0)
+        {
+            yield return new WaitForSeconds(reloadTime);
+
+            ammoInClip++;
+            ammoRemainingNotInClip--;
+            OnAmmoChanged();
+            ammoToMove--;
+        }
     }
 
     public string GetAmmoText()
