@@ -1117,7 +1117,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999834506}
-  m_LocalRotation: {x: 0.25290754, y: -0.000000018611923, z: 0.0000000048652633, w: 0.9674905}
+  m_LocalRotation: {x: 0.25290754, y: 0.000000018611921, z: -0.0000000048652624, w: 0.9674905}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2056,6 +2056,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f31dd3b1548ab42859df68948d4b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &1664101272
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664101270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1664101273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664101270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8399f3f6f79cd314fb3eb648a1084e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1
 --- !u!1001 &1818499974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2380,6 +2407,7 @@ MonoBehaviour:
   decalPrefab: {fileID: -2680356981473730782, guid: 94e6fb4bef690124eb88121a9f19894f,
     type: 3}
   firePoint: {fileID: 1931627711}
+  damage: 0
 --- !u!1 &1911646161
 GameObject:
   m_ObjectHideFlags: 3

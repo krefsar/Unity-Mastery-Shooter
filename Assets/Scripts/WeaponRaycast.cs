@@ -10,6 +10,8 @@ public class WeaponRaycast : WeaponComponent
     private PooledMonoBehaviour decalPrefab;
     [SerializeField]
     private Transform firePoint;
+    [SerializeField]
+    private int damage = 1;
 
     private RaycastHit hitInfo;
 
@@ -21,7 +23,15 @@ public class WeaponRaycast : WeaponComponent
 
         if (Physics.Raycast(ray, out hitInfo, maxDistance, layerMask))
         {
-            SpawnDecal(hitInfo.point, hitInfo.normal);
+            Health health = hitInfo.collider.GetComponent<Health>();
+            if (health != null)
+            {
+                health.TakeHit(damage);
+            } else
+            {
+                SpawnDecal(hitInfo.point, hitInfo.normal);
+            }
+
         }
     }
 
