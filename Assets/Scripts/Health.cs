@@ -16,6 +16,12 @@ public class Health : MonoBehaviour
     public void TakeHit(int amount)
     {
         currentHealth -= amount;
-        GetComponentInChildren<Animator>().SetTrigger("Hit");
+        if (currentHealth > 0)
+        {
+            GetComponentInChildren<Animator>().SetTrigger("Hit");
+        } else
+        {
+            GetComponentInChildren<Animator>().SetTrigger("Die");
+        }
     }
 }
