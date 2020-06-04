@@ -7,6 +7,16 @@ public class ZombieNavigation : MonoBehaviour
     private NavMeshPath path;
     private GameObject cube;
 
+    private void Awake()
+    {
+        GetComponent<Health>().OnDied += HandleDied;
+    }
+
+    private void HandleDied()
+    {
+        this.enabled = false;
+    }
+
     private void Start()
     {
         playerTransform = FindObjectOfType<PlayerMovement>().transform;

@@ -3,6 +3,11 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public bool Alive { get { return currentHealth > 0; } }
+
+    public event Action OnTookHit = delegate { };
+    public event Action OnDied = delegate { };
+
     [SerializeField]
     private int maxHealth = 1;
 
@@ -15,13 +20,16 @@ public class Health : MonoBehaviour
 
     public void TakeHit(int amount)
     {
-        currentHealth -= amount;
-        if (currentHealth > 0)
+        if (Alive)
         {
-            GetComponentInChildren<Animator>().SetTrigger("Hit");
-        } else
-        {
-            GetComponentInChildren<Animator>().SetTrigger("Die");
+            currentHealth -= amount;
+            if (Alive)
+            {
+                OnTookHit();
+            } else
+            {
+                OnDied();
+            }
         }
     }
 }
