@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ZombieJacketAndShirt
+  m_Controller: {fileID: 9100000, guid: 316f9a5c0734ca5439128f0ec83fd4b3, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: -203655887218126122, guid: cdd5cebd35daf8f4aa3f4cb691fd5c4d,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: b039a2a3c20a17d41b2817ee291cb186,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: c6df67f22c0e41d46a02d2d920efb007,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 80bb97ee61edae441a1a962a1170dc61,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 02b4f66353f1fe0438878ae1c9e6773f,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 9e3819ae0b96c59479d63949273ce93e,
+      type: 3}
