@@ -3,6 +3,7 @@
 public class ZombieAnimator : MonoBehaviour
 {
     private Animator animator;
+    private ZombieAttack zombieAttack;
 
     private void Awake()
     {
@@ -10,6 +11,14 @@ public class ZombieAnimator : MonoBehaviour
 
         GetComponent<Health>().OnTookHit += HandleTookHit;
         GetComponent<Health>().OnDied += HandleDied;
+
+        GetComponent<ZombieAttack>().OnAttack += HandleAttack;
+    }
+
+    private void HandleAttack()
+    {
+        animator.SetInteger("AttackId", UnityEngine.Random.Range(1, 3));
+        animator.SetTrigger("Attack");
     }
 
     private void HandleDied()
