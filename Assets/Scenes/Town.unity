@@ -610,6 +610,19 @@ MonoBehaviour:
   weapons:
   - {fileID: 1524397725}
   - {fileID: 1818499976}
+--- !u!114 &904034714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904034712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8399f3f6f79cd314fb3eb648a1084e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
 --- !u!114 &904034715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100356,6 +100369,28 @@ Transform:
   m_Father: {fileID: 6093697624189812688}
   m_RootOrder: 625
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8296172667908306647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7820346619342336571, guid: d1d49ef956f87b0499d1676840e6789b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2280684838235735276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8296172667908306648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172667908306647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f52a7b709c5c3840bd89cc77a2efa80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBetweenAttacks: 1.5
+  delayBetweenAnimationAndDamage: 0.5
+  maximumAttackRange: 1.5
+  damage: 1
 --- !u!1 &8296172668825513782
 GameObject:
   m_ObjectHideFlags: 0
