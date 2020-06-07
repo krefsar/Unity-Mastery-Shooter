@@ -18,7 +18,6 @@ public class ZombieAnimator : MonoBehaviour
     private void HandleAttack()
     {
         int attackId = Random.Range(1, 3);
-        Debug.Log("attack with attack id " + attackId);
         animator.SetInteger("AttackId", attackId);
         animator.SetTrigger("Attack");
     }
