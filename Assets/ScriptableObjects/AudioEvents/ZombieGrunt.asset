@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1971ce2643940e14db3d6ede4e50a57b, type: 3}
+  m_Name: ZombieGrunt
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 0b1d86ff3df40884b9cbedcd2a44d93a, type: 3}
+  - {fileID: 8300000, guid: 27101161835e4f845b1a667153168413, type: 3}
+  - {fileID: 8300000, guid: 89121053ffbeb8f489278096fca00d91, type: 3}
+  - {fileID: 8300000, guid: 9857b6691cfdfab4ebb9571fd57c742e, type: 3}
+  - {fileID: 8300000, guid: 53e49b47769001e4793030769f567003, type: 3}
+  - {fileID: 8300000, guid: bdcd3ab0df5f84e4eb3d37c01a6e0cae, type: 3}
+  - {fileID: 8300000, guid: 47c157f9970ce71408e7abdb08028ab2, type: 3}
+  - {fileID: 8300000, guid: 676aeec1e0419d94b86bc07e4ba849b9, type: 3}
+  volume:
+    minValue: 0.7252525
+    maxValue: 1
+  pitch:
+    minValue: 0.15959597
+    maxValue: 0.54747474
+  distance:
+    minValue: 1
+    maxValue: 1000
+  mixer: {fileID: 4567318082584026603, guid: 99d73725624e0e74ebf93c6537582f09, type: 2}
