@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!243 &-6407260618518893080
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PlayerGrunts
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: f86f5ee995dd9d74582f61d401853232
+  m_Children: []
+  m_Volume: 791721d6abb0fde45a5bbb6e6e0b3ef0
+  m_Pitch: ff1abea3e5c0e4c4e9bc0beb0eb12267
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 2454980505679232661}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &-3063713097791099447
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -39,6 +58,7 @@ AudioMixerController:
   - guids:
     - a77fa5f79bddfc14391541339ec62249
     - 9c1cd9baf4a9cef4894760b668e353ec
+    - f86f5ee995dd9d74582f61d401853232
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -53,6 +73,7 @@ AudioMixerGroupController:
   m_GroupID: a77fa5f79bddfc14391541339ec62249
   m_Children:
   - {fileID: -3063713097791099447}
+  - {fileID: -6407260618518893080}
   m_Volume: 67b1511b87484b747a343952897cf1f4
   m_Pitch: 7bda2d8c8a8e933488793955bac3e4df
   m_Send: 00000000000000000000000000000000
@@ -98,6 +119,20 @@ AudioMixerEffectController:
   m_EffectID: 3a497a06cdd435143a5eea9aee22d305
   m_EffectName: Attenuation
   m_MixLevel: e64dbd515e43c584aa7b87882e90e734
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &2454980505679232661
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 216932c617b9e3e419b0520a8808daaf
+  m_EffectName: Attenuation
+  m_MixLevel: b20983da36d3fb54982ee0003e41681a
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0

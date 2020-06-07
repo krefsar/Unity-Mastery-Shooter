@@ -22,8 +22,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 47c157f9970ce71408e7abdb08028ab2, type: 3}
   - {fileID: 8300000, guid: 676aeec1e0419d94b86bc07e4ba849b9, type: 3}
   volume:
-    minValue: 0
-    maxValue: 0.06464648
+    minValue: 0.72727275
+    maxValue: 1
   pitch:
-    minValue: 0.28888887
-    maxValue: 0.28888887
+    minValue: 0.94949484
+    maxValue: 1.5636361
+  distance:
+    minValue: 0
+    maxValue: 1000.00006
+  mixer: {fileID: -6407260618518893080, guid: 99d73725624e0e74ebf93c6537582f09, type: 2}
