@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
 
     public event Action OnTookHit = delegate { };
     public event Action OnDied = delegate { };
+    public event Action<int, int> OnHealthChanged = delegate { };
 
     [SerializeField]
     private int maxHealth = 1;
@@ -18,11 +19,18 @@ public class Health : MonoBehaviour
         currentHealth = maxHealth;
     }
 
+    public void ModifyHealth(int amount)
+    {
+        currentHealth += amount;
+        OnHealthChanged(currentHealth, maxHealth);
+    }
+
     public void TakeHit(int amount)
     {
         if (Alive)
         {
-            currentHealth -= amount;
+            ModifyHealth(-amount);
+
             if (Alive)
             {
                 OnTookHit();
