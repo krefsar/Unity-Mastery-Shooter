@@ -5,6 +5,9 @@ public class WeaponSound : WeaponComponent
 {
     private AudioSource audioSource;
 
+    [SerializeField]
+    private SimpleAudioEvent audioEvent;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -12,6 +15,6 @@ public class WeaponSound : WeaponComponent
 
     protected override void WeaponFired()
     {
-        audioSource.Play();
+        audioEvent.Play(audioSource);
     }
 }

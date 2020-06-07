@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1971ce2643940e14db3d6ede4e50a57b, type: 3}
+  m_Name: BlasterFire
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 6f8efae2a70a9f54cbdb5dc8dd4e9fd7, type: 3}
+  - {fileID: 8300000, guid: 5752bcbc37b3cb4448f5ea2854f25740, type: 3}
+  - {fileID: 8300000, guid: 98a3c95a6ae178f4b8249ae2b336832c, type: 3}
+  - {fileID: 8300000, guid: fa55a2f8e3fcfc243be4e933bde97de8, type: 3}
+  - {fileID: 8300000, guid: 74fcae481467c404697202c3dad210a8, type: 3}
+  - {fileID: 8300000, guid: c8c4c2fc396c17d4782362c72b190b27, type: 3}
+  volume:
+    minValue: 0.84646475
+    maxValue: 1
+  pitch:
+    minValue: 0.7737374
+    maxValue: 1.3717172
+  distance:
+    minValue: 1
+    maxValue: 1000
+  mixer: {fileID: -3063713097791099447, guid: 99d73725624e0e74ebf93c6537582f09, type: 2}

@@ -2310,7 +2310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponHotKey: 49
-  fireDelay: 1
+  fireDelay: 0.5
 --- !u!114 &1524397726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2323,6 +2323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fdc3a4b1b39cb4ebd2229d1b0d5168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioEvent: {fileID: 11400000, guid: 1cd279f54002d6e4e865619de12c2c57, type: 2}
 --- !u!4 &1524397727 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2342107146079378975, guid: 3faf0bc2eeadcd645a90e68f2678f794,
@@ -2619,6 +2620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fdc3a4b1b39cb4ebd2229d1b0d5168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioEvent: {fileID: 0}
 --- !u!82 &1818499978
 AudioSource:
   m_ObjectHideFlags: 0
