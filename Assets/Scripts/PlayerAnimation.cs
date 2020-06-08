@@ -7,15 +7,24 @@ public class PlayerAnimation : MonoBehaviour
     private Animator animator;
     [SerializeField]
     private float drawWeaponSpeed;
+    [SerializeField]
+    private float delayBeforeWeaponDown = 3f;
+
+    private Coroutine currentFadeRoutine;
 
     private void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            StartCoroutine(FadeToShootingLayer());
+            if (currentFadeRoutine != null)
+            {
+                StopCoroutine(currentFadeRoutine);
+            }
+
+            currentFadeRoutine = StartCoroutine(FadeToShootingLayer());
         } else if (Input.GetButtonUp("Fire1"))
         {
-            StartCoroutine(FadeFromShootingLayer());
+            currentFadeRoutine = StartCoroutine(FadeFromShootingLayer());
         }
     }
 
@@ -39,6 +48,10 @@ public class PlayerAnimation : MonoBehaviour
 
     private IEnumerator FadeFromShootingLayer()
     {
+        yield return currentFadeRoutine;
+
+        yield return new WaitForSeconds(delayBeforeWeaponDown);
+
         float currentWeight = animator.GetLayerWeight(1);
         float elapsedTime = 0f;
 
