@@ -7,6 +7,8 @@ public class WeaponAmmo : WeaponComponent
     public event Action OnAmmoChanged = delegate { };
 
     [SerializeField]
+    private bool infiniteAmmo = false;
+    [SerializeField]
     private int maxAmmo = 24;
     [SerializeField]
     private int maxAmmoPerClip = 6;
@@ -51,7 +53,12 @@ public class WeaponAmmo : WeaponComponent
     private IEnumerator Reload()
     {
         int ammoMissingFromClip = maxAmmoPerClip - ammoInClip;
+
         int ammoToMove = Mathf.Min(ammoMissingFromClip, ammoRemainingNotInClip);
+        if (infiniteAmmo)
+        {
+            ammoToMove = ammoMissingFromClip;
+        }
 
         while (ammoToMove > 0)
         {
@@ -66,6 +73,14 @@ public class WeaponAmmo : WeaponComponent
 
     public string GetAmmoText()
     {
-        return string.Format("{0}/{1}", ammoInClip, ammoRemainingNotInClip);
+        if (infiniteAmmo)
+        {
+            return string.Format("{0}/∞", ammoInClip, ammoRemainingNotInClip);
+        }
+        else
+        {
+            return string.Format("{0}/{1}", ammoInClip, ammoRemainingNotInClip);
+        }
+
     }
 }
