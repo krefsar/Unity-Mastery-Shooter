@@ -7,8 +7,7 @@ public class EnableChildrenOnEnter : MonoBehaviour
 
     private void Awake()
     {
-        bool state = false;
-        ToggleChildren(state);
+        ToggleChildren(false);
     }
 
     private void OnTriggerEnter(Collider other)
