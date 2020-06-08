@@ -1309,6 +1309,9 @@ GameObject:
   - component: {fileID: -4256594453750700305}
   - component: {fileID: -8113322963679781871}
   - component: {fileID: 8296172668779765740}
+  - component: {fileID: 7770371949106810707}
+  - component: {fileID: 8296172668779765746}
+  - component: {fileID: 6522177493792003968}
   m_Layer: 0
   m_Name: RealisticZombie
   m_TagString: Untagged
@@ -1395,6 +1398,49 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7770371949106810707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371891787163591243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8399f3f6f79cd314fb3eb648a1084e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+--- !u!114 &8296172668779765746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371891787163591243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f52a7b709c5c3840bd89cc77a2efa80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBetweenAttacks: 1.5
+  delayBetweenAnimationAndDamage: 0.5
+  maximumAttackRange: 1.5
+  damage: 1
+--- !u!114 &6522177493792003968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371891787163591243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308465f3cb1ae6b40bcf177d20ed8764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPoolSize: 15
+  returnToPoolDelay: 10
 --- !u!1 &4372523973345420890
 GameObject:
   m_ObjectHideFlags: 0
