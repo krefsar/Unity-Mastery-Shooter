@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FPSToggle : MonoBehaviour
 {
+    private Weapons weapons;
+
     [SerializeField]
     private GameObject[] firstPersonObjects;
     [SerializeField]
@@ -13,6 +12,11 @@ public class FPSToggle : MonoBehaviour
     private KeyCode toggleKey = KeyCode.F1;
 
     private bool isFpsMode;
+
+    private void Awake()
+    {
+        weapons = FindObjectOfType<Weapons>();
+    }
 
     private void OnEnable()
     {
@@ -30,6 +34,7 @@ public class FPSToggle : MonoBehaviour
     private void Toggle()
     {
         isFpsMode = !isFpsMode;
+        weapons.IsFpsMode = isFpsMode;
 
         ToggleObjectsForCurrentMode();
     }
