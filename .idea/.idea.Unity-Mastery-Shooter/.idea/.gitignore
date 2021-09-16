@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/contentModel.xml
+/.idea.Unity-Mastery-Shooter.iml
+/modules.xml
+# Datasource local storage ignored files
+/../../../../../../../../:\Users\evanm\engineering\Unity-Mastery-Shooter\.idea\.idea.Unity-Mastery-Shooter\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
